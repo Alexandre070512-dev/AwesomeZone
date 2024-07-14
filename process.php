@@ -14,10 +14,10 @@ if ($conn->connect_error) {
 
 // Obtém os dados do formulário
 $nome = $_POST['nome'];
-$email = $_POST['email'];
+$passw = $_POST['email'];
 
 // Prepara e executa a consulta SQL
-$sql = "INSERT INTO usuarios (nome, email) VALUES ('$name', '$passw')";
+$sql = "INSERT INTO usuarios (nome, passw) VALUES ('$name', '$passw')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Novo registro criado com sucesso";
